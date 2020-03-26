@@ -1,0 +1,1 @@
+# docker-bamboo-agent-3.6.1-jdk-13-alpine
