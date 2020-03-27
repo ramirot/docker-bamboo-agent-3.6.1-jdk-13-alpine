@@ -23,6 +23,7 @@ ENV GRAILS_VERSION=3.3.9
 RUN wget https://github.com/grails/grails-core/releases/download/v$GRAILS_VERSION/grails-$GRAILS_VERSION.zip \
     && unzip grails-$GRAILS_VERSION.zip \
     && rm -rf grails-$GRAILS_VERSION.zip \
+    && mkdir -p /usr/lib/jvm \
     && mv grails-$GRAILS_VERSION /usr/lib/jvm/grails
 
 ENV GRAILS_HOME /usr/lib/jvm/grails
